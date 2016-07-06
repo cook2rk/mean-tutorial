@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('meanTutorialApp', ['meanTutorialApp.constants', 'ngCookies', 'ngResource',
-    'ngSanitize', 'ui.router', 'ui.bootstrap'
+angular.module('meanTutorialApp', ['meanTutorialApp.auth', 'meanTutorialApp.admin',
+    'meanTutorialApp.constants', 'ngCookies', 'ngResource', 'ngSanitize', 'ui.router',
+    'ui.bootstrap', 'validation.match'
   ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/');
